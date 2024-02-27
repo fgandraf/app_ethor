@@ -36,6 +36,7 @@ import androidx.compose.ui.unit.sp
 import com.felipegandra.ethorgas.R
 import com.felipegandra.ethorgas.components.SliderComp
 import com.felipegandra.ethorgas.services.calculate
+import com.felipegandra.ethorgas.services.diference
 import com.felipegandra.ethorgas.ui.theme.KanitBold
 import com.felipegandra.ethorgas.ui.theme.KanitExtraBold
 import com.felipegandra.ethorgas.ui.theme.KanitRegular
@@ -53,12 +54,12 @@ fun HomeScreen() {
     var ethanolSliderColor by remember { mutableStateOf(Color.Red) }
     var background by remember { mutableIntStateOf(1) }
     var cardResultFuel by remember { mutableStateOf("GASOLINA") }
-    var cardResultCoef by remember { mutableFloatStateOf(0.0f) }
+    var coefficient by remember { mutableFloatStateOf(0.0f) }
 
     fun updateCardResult() {
-        cardResultCoef = calculate(sliderValueGasoline, sliderValueEthanol)
+        coefficient = calculate(sliderValueGasoline, sliderValueEthanol)
 
-        if (cardResultCoef > 0.70f) {
+        if (coefficient > 0.70f) {
             gasolineTextColor = colorGreen
             ethanolTextColor = colorRed
             gasolineSliderColor = colorGreen
@@ -168,7 +169,7 @@ fun HomeScreen() {
                         fontFamily = KanitRegular,
                         fontSize = 12.sp,
                         modifier = Modifier.fillMaxWidth(),
-                        text = "DIFERENÇA: ${String.format("%.0f", cardResultCoef*100)} %"
+                        text = "DIFERENÇA: ${diference(coefficient)}"
                     )
                 }
             }
