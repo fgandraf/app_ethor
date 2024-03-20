@@ -1,6 +1,6 @@
-package com.felipegandra.ethorgas.services
+package com.felipegandra.ethor.services
 
-import com.felipegandra.ethorgas.R
+import com.felipegandra.ethor.R
 
 fun updateResult (
     valueGasoline: Float,

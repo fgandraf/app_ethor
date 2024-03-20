@@ -1,4 +1,4 @@
-package com.felipegandra.ethorgas.components
+package com.felipegandra.ethor.components
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -19,10 +19,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.felipegandra.ethorgas.services.diference
-import com.felipegandra.ethorgas.ui.theme.KanitBold
-import com.felipegandra.ethorgas.ui.theme.KanitExtraBold
-import com.felipegandra.ethorgas.ui.theme.KanitRegular
+import com.felipegandra.ethor.services.diference
+import com.felipegandra.ethor.ui.theme.KanitBold
+import com.felipegandra.ethor.ui.theme.KanitExtraBold
+import com.felipegandra.ethor.ui.theme.KanitRegular
 
 @Composable
 fun ResultComponent(

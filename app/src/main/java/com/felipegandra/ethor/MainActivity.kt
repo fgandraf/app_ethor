@@ -1,4 +1,4 @@
-package com.felipegandra.ethorgas
+package com.felipegandra.ethor
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,15 +7,14 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.felipegandra.ethorgas.screens.HomeScreen
-import com.felipegandra.ethorgas.ui.theme.EthorgasTheme
+import com.felipegandra.ethor.screens.HomeScreen
+import com.felipegandra.ethor.ui.theme.EthorTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            EthorgasTheme {
-                // A surface container using the 'background' color from the theme
+            EthorTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background

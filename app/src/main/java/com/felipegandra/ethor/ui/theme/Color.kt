@@ -1,4 +1,4 @@
-package com.felipegandra.ethorgas.ui.theme
+package com.felipegandra.ethor.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

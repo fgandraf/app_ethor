@@ -1,4 +1,4 @@
-package com.felipegandra.ethorgas
+package com.felipegandra.ethor
 
 import org.junit.Test
 

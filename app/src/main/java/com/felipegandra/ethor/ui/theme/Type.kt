@@ -1,4 +1,4 @@
-package com.felipegandra.ethorgas.ui.theme
+package com.felipegandra.ethor.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
@@ -6,7 +6,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.felipegandra.ethorgas.R
+import com.felipegandra.ethor.R
 
 val KanitMedium = FontFamily(Font(R.font.kanit_medium))
 val KanitRegular = FontFamily(Font(R.font.kanit_regular))

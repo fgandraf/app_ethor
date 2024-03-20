@@ -1,4 +1,4 @@
-package com.felipegandra.ethorgas.screens
+package com.felipegandra.ethor.screens
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,10 +12,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.felipegandra.ethorgas.components.CardSliderComponent
-import com.felipegandra.ethorgas.components.ResultComponent
-import com.felipegandra.ethorgas.services.updateResult
-import com.felipegandra.ethorgas.ui.theme.EthorgasTheme
+import com.felipegandra.ethor.components.CardSliderComponent
+import com.felipegandra.ethor.components.ResultComponent
+import com.felipegandra.ethor.services.updateResult
+import com.felipegandra.ethor.ui.theme.EthorTheme
 
 @Composable
 fun HomeScreen()
@@ -54,7 +54,7 @@ fun HomeScreen()
 @Preview(showBackground = true)
 @Composable
 fun HomeScreenPreview() {
-    EthorgasTheme {
+    EthorTheme {
         HomeScreen()
     }
 }

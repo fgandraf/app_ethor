@@ -1,4 +1,4 @@
-package com.felipegandra.ethorgas.services
+package com.felipegandra.ethor.services
 
 import kotlin.math.abs
 
