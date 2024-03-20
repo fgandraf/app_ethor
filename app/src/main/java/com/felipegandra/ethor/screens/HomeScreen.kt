@@ -28,7 +28,6 @@ fun HomeScreen()
 
     Box(modifier = Modifier.fillMaxSize())
     {
-
         ResultComponent(
             backgroundId = background,
             cardResultFuel = cardResultFuel,

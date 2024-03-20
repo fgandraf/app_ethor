@@ -34,6 +34,7 @@ fun ResultComponent(
         modifier = Modifier
             .fillMaxWidth()
             .height((LocalConfiguration.current.screenHeightDp - 230).dp)
+            .padding(top = 40.dp)
             .paint(painterResource(id = backgroundId), contentScale = ContentScale.FillBounds),
         contentAlignment = Alignment.BottomCenter
     )
