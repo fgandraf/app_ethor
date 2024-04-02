@@ -5,9 +5,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -16,7 +14,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.zIndex
 
 @Composable
 fun CardSliderComponent(
@@ -29,12 +26,8 @@ fun CardSliderComponent(
 ) {
         Card(
             modifier = modifier
-                .fillMaxWidth()
-                .height(250.dp)
-                .zIndex(2f)
-                .padding(horizontal = 20.dp)
-                .padding(bottom = 20.dp)
-                .offset(y = (-20).dp),
+                .fillMaxSize()
+                .padding(horizontal = 20.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White),
             elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
             border = BorderStroke(1.dp, Color.LightGray)
@@ -44,7 +37,7 @@ fun CardSliderComponent(
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(20.dp),
-                verticalArrangement = Arrangement.SpaceBetween
+                verticalArrangement = Arrangement.Center
             )
             {
                 SliderComp(text = "GASOLINA:", sliderValue = sliderValueGasoline,

@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Slider
+import androidx.compose.material3.SliderDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -69,8 +70,8 @@ fun SliderComp(
                 .fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically)
             {
                 Row(modifier = Modifier
-                        .size(width = 50.dp, height = 50.dp)
-                        .clickable { onChange(sliderValue - 0.01f) },
+                    .size(width = 50.dp, height = 50.dp)
+                    .clickable { onChange(sliderValue - 0.01f) },
                     horizontalArrangement = Arrangement.Center
                 ) {
                     Text(
@@ -88,6 +89,11 @@ fun SliderComp(
                     steps = 89,
                     value = sliderValue,
                     onValueChange = onChange,
+                    colors = SliderDefaults.colors(
+                        thumbColor = Color(0xFF8160b9),
+                        activeTrackColor = Color(0xFF8160b9),
+                        inactiveTrackColor = Color(0x668160B9)
+                    )
                 )
                 Row(modifier = Modifier
                     .size(width = 50.dp, height = 50.dp)
