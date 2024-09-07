@@ -11,8 +11,8 @@ android {
         applicationId = "com.felipegandra.ethor"
         minSdk = 22
         targetSdk = 34
-        versionCode = 3
-        versionName = "0.0.4"
+        versionCode = 5
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
